@@ -1,5 +1,7 @@
-/*---------------------------------carousel--*/
+/*---------------------------------style--*/
 
+
+/*---------------------------------carousel--*/
 
 .carousel {
   display: block;
@@ -7,4 +9,22 @@
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
+  width: relative;
+ 
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;
+        }
+
+.item img{
+    width: 100%;
+    max-height: 900px;
+    max-width: 1200px;
+    position: relative;
 }
