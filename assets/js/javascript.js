@@ -25,4 +25,48 @@ $(document).ready(function(){
   });
 });
 
+$('#myCarousel').on('slid', '', checkitem);
+$('#myCarousel').on('slid.bs.carousel', '', checkitem);
+
+$(document).ready(function(){
+    checkitem();
+});
+
+function checkitem()
+{
+var $this = $('#myCarousel');
+    if($('.carousel-inner .item:first').hasClass('active')) {
+        $this.children('.left.carousel-control').hide();
+        $this.children('.right.carousel-control').show();
+    } else if($('.carousel-inner .item:last').hasClass('active')) {
+        $this.children('.left.carousel-control').show();
+        $this.children('.right.carousel-control').hide();
+    } else {
+        $this.children('.carousel-control').show();
+    } 
+}
+function getFullscreenElement() {
+    return document.fullscreenElement
+        || document.webkitFullscreenElement
+        || document.mozFullscreenElement
+        || document.msFullscreenElement;        
+}
+
+
+
+function toggleFullscreen() {
+    if (getFullscreenElement()) {
+        document.exitFullscreen();
+    } else {
+        document.getElementById("ID").requestFullscreen().catch(console.log);
+    }
+}
+
+    document.addEventListener("dblclick", () => {
+            toggleFullscreen();
+        }); 
+    
+        document.addEventListener("fullscreenchange", () => {
+            console.log("full screen changed!");
+        })
 
