@@ -71,3 +71,14 @@ function toggle(event) {
     document.getElementById('about').style.display = 'none'
   }
 }
+
+/*var aud = document.getElementById("audio-1");
+
+function playAud() {
+    aud.play();
+}
+
+function pauseAud() {
+    aud.pause();
+}*/
+
