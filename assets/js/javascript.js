@@ -1,6 +1,6 @@
 $(document).ready(function(){
  
-  $("#myCarousel").carousel();
+  $("#myCarousel").carousel({wrap: false});
     
  
   $(".item1").click(function(){
@@ -24,6 +24,8 @@ $(document).ready(function(){
     $("#myCarousel").carousel("next");
   });
 });
+
+console.log("myCarousel")
 
 $('#myCarousel').on('slid', '', checkitem);
 $('#myCarousel').on('slid.bs.carousel', '', checkitem);
@@ -94,6 +96,3 @@ var audio;
 
 var segmentEnd = 0;
 
-function init () {
-  
-  audio = document.getElementById('poemAudio');
