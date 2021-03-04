@@ -72,22 +72,28 @@ function toggle(event) {
   }
 }
 
-/*var aud = document.getElementById("audio-1");
+/*-----------------------------------------------------------audio array - audio to be uploaded, will follow said format*/
 
-function playAud() {
-    aud.play();
-}
 
-function pauseAud() {
-    aud.pause();
-}*/
+var audioPlayer = document.getElementById('poemAudio');
+audioPlayer.play();
+audioPlayer.pause();
 
-const audioContainer = document.getElementById("audioContainer"); 
+console.log(audioPlayer.currentTime);
+audioPlayer.currentTime = 0;
+console.log(audioPlayer.currentTime);
 
-function playMp3() { 
-  audioContainer.play(); 
-} 
+audioPlayer.play();
+setTimeout(function () {
+  console.log(audioPlayer.currentTime);
+}, 1000);
 
-function pauseMp3() { 
-  audioContainer.pause(); 
-} 
+var segments = [];
+
+var audio; 
+
+var segmentEnd = 0;
+
+function init () {
+  
+  audio = document.getElementById('poemAudio');

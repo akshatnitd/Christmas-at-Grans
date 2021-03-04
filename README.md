@@ -42,3 +42,6 @@ to the slide and slid events. Other than this the code follows basic if, else if
 
 A follow-up piece of code enables the carousel to restart without refreshing the page (to be built, as of 14:00 on 02/03/2021).
 
+The deck.core.js JavaScript file was uploaded as I felt it could be of use, but the project is being built with the intention to not rely 
+on outside sources.
+

@@ -60,6 +60,8 @@
         width: 100%;
         }
 
+.carousel-indicators li { visibility: hidden; }
+
 .item img{
     width: 100%;
     max-height: 900px;
