@@ -45,3 +45,6 @@ A follow-up piece of code enables the carousel to restart without refreshing the
 The deck.core.js JavaScript file was uploaded as I felt it could be of use, but the project is being built with the intention to not rely 
 on outside sources.
 
+
+The 'slide' class was added to the carousel feature to simulate the turning of pages. This is, in effect, a short children's book, and is designed to feel that way when 
+users click through the slides.
