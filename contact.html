@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_5JK1Vn0UFaSc2oSSOYG5T");
+    })();
+    </script>
+    <title>Contact</title>
+</head>
+<body>
+    <section class="bg-color">
+        <div>
+            
+            <div class="center-form">
+                <h1 class="title">Christmas at Gran's</h1>
+                <div class="team">
+                    <h2>The team</h2>
+                    <h4>Michael Brennan, the author</h4>
+                    <!---insert doodle-->
+                    <h4>Conor Carroll, the artist</h4>
+                    <!---insert doodle-->
+
+
+                </div>
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                            <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
+                            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message to team" required></textarea>
+                            <div class="form-row text-center">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary">Send your message :-)</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+        </div>
+    </section>
+    <footer class="container-fluid my-footer">
+        <div class="row">
+            <div class="column footer-element">
+                <a id="about-button" title="Click to Show/Hide"  type="button"><h5>About</h5></a>
+                <div class="footer-child" id="about" style="display:none">
+                        <p>Christmas at Gran's was written by Michael Brennan at the age of 10, and adapted into this digital story by Conor Carroll. It is with deep regret that Conor discovered that Bonzo 
+                        did not, in fact, exist, and was a figment of Brennan's imagination for the sake of the poem. As Michael's brother Tom put it, he took "a bit of creative licence there". We hope that 
+                        you love him all the same.
+                        </p>
+                </div>
+            </div>
+            <div class="column footer-element">
+                <a href="#" target="#"><h5>Want to get in touch?</h5></a>
+            </div>
+        
+        </div>
+    </footer>
+    <script src="assets/js/sendEmail.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ccfb617d95.js" crossorigin="anonymous"></script>
+    <script src="assets/js/deck.core.js"></script>
+    <script src="assets/js/javascript.js"></script>
+</body>
+</html>

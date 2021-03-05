@@ -4,12 +4,22 @@
 
 .bg-color {
     background-color: aliceblue;
+    height: 150vh;
 }
 
 .title {
     font-family: 'Mountains of Christmas', sans-serif;
     text-align: center;
     font-weight: 700;
+}
+
+/*---------------------------------button--*/
+
+button {
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: #7db0e4;
+    color: #ffffff;
 }
 
 
@@ -21,7 +31,12 @@
     min-height: 60px;
     margin: 0;
     text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
+
+
 
 .column {
     width: 50%;
@@ -33,6 +48,13 @@
     margin: 1em;
 }
 
+.footer-element {
+    line-height: 17px;
+}
+
+.footer-element a {
+    font-size: 20px;
+}
 
 /*---------------------------------carousel--*/
 
@@ -73,4 +95,24 @@
     position: relative;
 }
 
+/*------------------------------------------------ Contact page --------------*/
 
+.center-form {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+.team h2{
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-weight: 300;
+    text-align: center; 
+}
+
+.team h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
