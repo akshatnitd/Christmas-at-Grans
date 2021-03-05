@@ -48,75 +48,18 @@ var $this = $('#myCarousel');
     } 
 }
 
-/*
-var elem = document.documentElement;
+var elem = document.getElementById("myCarousel");
 function openFullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { 
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
     elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { 
+  } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
 }
 
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.webkitExitFullscreen) { 
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { 
-    document.msExitFullscreen();
-  }
-}
-*/
-
-function getSize(){
-          var height = img.height;
-          var width = img.width;
-          var w = window.innerWidth;
-          var h = window.innerHeight;
-
-          var adjH = height * (w/width);
-          var adjW = w;
-          
-          if(adjH>h){
-              var wRatio = h/adjH;  
-              adjH = h;
-              adjW = wRatio * w;
-          }
-      
-         document.getElementById('myCarousel').height = adjH;
-         document.getElementById('myCarousel').width = adjW;
-     }
-function requestFullScreen(element) {
-         
-         if(fullScreen==false){
-             fullScreen=true;
-
-    var requestMethod = element.requestFullScreen;
-
-    if (requestMethod) {
-        requestMethod.call(element);
-    } 
-    else{
-         fullScreen=false;
-         
-         if(document.cancelFullScreen){
-		    document.cancelFullScreen();
-		} else if(document.exitFullScreen){
-		    document.exitFullScreen();
-		} else if(document.mozCancelFullScreen){
-		    document.mozCancelFullScreen();
-		} else if(document.webkitCancelFullScreen){
-		    document.webkitCancelFullScreen();
-		} else if(document.msExitFullscreen){
-		    document.msExitFullscreen();
-		}         
-     }         
-}
-
-document.querySelector('button').addEventListener('click', toggle)
+document.querySelector('#about-button').addEventListener('click', toggle)
 
 function toggle(event) {
     if (document.getElementById('about').style.display == 'none') {
@@ -127,3 +70,5 @@ function toggle(event) {
     document.getElementById('about').style.display = 'none'
   }
 }
+
+
