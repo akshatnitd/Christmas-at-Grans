@@ -86,8 +86,8 @@ function getSize(){
               adjW = wRatio * w;
           }
       
-         document.getElementById('myImg').height = adjH;
-         document.getElementById('myImg').width = adjW;
+         document.getElementById('myCarousel').height = adjH;
+         document.getElementById('myCarousel').width = adjW;
      }
 function requestFullScreen(element) {
          
